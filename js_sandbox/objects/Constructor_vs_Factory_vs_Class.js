@@ -39,6 +39,8 @@ const adres2 = new Address('caddei salim', 'Sulaymaniyah', 65700);
 showAddress(adres2);
 console.log('---------------');
 
+// ES6 Classes
+
 class Rectangle {
   constructor(height, width) {
     this.height = height;
