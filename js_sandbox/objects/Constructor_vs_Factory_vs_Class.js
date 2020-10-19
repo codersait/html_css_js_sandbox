@@ -38,3 +38,21 @@ function Address(street, city, zipCode) {
 const adres2 = new Address('caddei salim', 'Sulaymaniyah', 65700);
 showAddress(adres2);
 console.log('---------------');
+
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+  // Getter
+  get area() {
+    return this.calcArea();
+  }
+  // Method
+  calcArea() {
+    return this.height * this.width;
+  }
+}
+const square = new Rectangle(10, 10);
+console.log(square.area); // 100
+console.log('---------------');
