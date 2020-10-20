@@ -58,3 +58,14 @@ class Rectangle {
 const square = new Rectangle(10, 10);
 console.log(square.area); // 100
 console.log('---------------');
+
+class Admin extends User {
+  constructor(username, email, title){
+    super(username, email);
+    this.title = title;
+  }
+  deleteUser(user){
+    users = users.filter(u => u.username !== user.username);
+    return this; // allow method chaining
+  }
+}
